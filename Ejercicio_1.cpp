@@ -8,22 +8,14 @@
 #include <cmath>
 using namespace std;
 
-double calcularArea(double radio){
-
-	double pi = M_PI;
-	return pi * pow(radio, 2);
-}
 
 int main() {
 
-	double radio, resultado;
+	double radio,area;
 	cout << "Ingrese el radio del circulo: ";
-
-	cin >> radio;
-
-	resultado = calcularArea(radio);
-
-	cout << "El area del circulo es: " << resultado;
+	cin  >> radio;
+	area= M_PI * pow(radio,2);
+	cout << "El area del circulo es: " << area;
 
 	return 0;
 }
